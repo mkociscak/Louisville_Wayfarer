@@ -16,9 +16,9 @@ export class CitiesComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap
     .subscribe(params => {
-      this.city = CITY.find(job => {
+      this.city = CITY.find(city => {
         let paramId: string = params.get('id') || '';
-        return this.city.id === parseInt(paramId);
+        return city.id === parseInt(paramId);
       })
     })
   }
