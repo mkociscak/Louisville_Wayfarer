@@ -3,18 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostsComponent } from './posts/posts.component';
-import { NavComponent } from './nav/nav.component';
-import { CitylistComponent } from './citylist/citylist.component';
-import { SlideshowComponent } from './slideshow/slideshow.component';
+import { CitiesComponent } from './cities/cities.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent,
-    NavComponent,
-    CitylistComponent,
-    SlideshowComponent
+    CitiesComponent
   ],
   imports: [
     BrowserModule,
