@@ -4,12 +4,14 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 
 
 import { CitiesComponent } from './cities/cities.component';
+import { CitylistComponent } from './citylist/citylist.component';
 
-const routes: Routes = [ {
-  path: 'home',
-  component: SlideshowComponent
-}
-  
+const routes: Routes = [
+  {
+    path: 'cities',
+    component: CitylistComponent
+   
+  }
 ];
 
 @NgModule({
