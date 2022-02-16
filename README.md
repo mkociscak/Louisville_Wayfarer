@@ -1,3 +1,3 @@
 # Louisville_Wayfarer
-![IMG_0714](https://user-images.githubusercontent.com/87401362/154345485-cad2e58d-c7d2-4554-a0eb-ff843722fe24.jpg)
+![IMG_0713](https://user-images.githubusercontent.com/87401362/154346161-dc442d22-39d9-4923-94dd-c693b955ed43.jpg)
 
