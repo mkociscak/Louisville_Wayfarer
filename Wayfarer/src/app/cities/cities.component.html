@@ -1,6 +1,6 @@
-<p>cities works!</p>
-<div>
-    <li>
-        <a>{{city.id}}</a>
+
+<div class ='cities-page'>
+    <li *ngFor="let city of city">
+        <a routerLink="cities/{{city.id}}">{{city.id}}</a>
     </li>
 </div>
