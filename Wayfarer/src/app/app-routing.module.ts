@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+
 
 import { CitiesComponent } from './cities/cities.component';
 import { CitylistComponent } from './citylist/citylist.component';
