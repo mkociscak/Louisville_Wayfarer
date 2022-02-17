@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CITY } from './cityobjects';
+import { CITY } from '../cityobjects';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,16 +9,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CitiesComponent implements OnInit {
 
-  city: any;
+    
+
+
+city: any = CITY;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap
     .subscribe(params => {
-      this.city = CITY.find(job => {
+      this.city = CITY.find(city => {
         let paramId: string = params.get('id') || '';
-        return this.city.id === parseInt(paramId);
+        return city.id === parseInt(paramId);
       })
     })
   }
