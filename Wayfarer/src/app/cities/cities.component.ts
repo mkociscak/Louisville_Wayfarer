@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CITY } from '../cityobjects';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-cities',
   templateUrl: './cities.component.html',
@@ -12,7 +13,9 @@ export class CitiesComponent implements OnInit {
     
 
 
-city: any = CITY;
+cities: any = CITY;
+city: any;
+posts: any;
 
   constructor(private route: ActivatedRoute) { }
 
@@ -24,6 +27,6 @@ city: any = CITY;
         return city.id === parseInt(paramId);
       })
     })
-  }
+ }
 
 }

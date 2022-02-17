@@ -1,1 +1,11 @@
-
+<div class="cities-page">
+    <div>
+        <ul *ngFor="let cities of city">
+            <li>
+                <h1><a routerLink="{{cities.id}}">{{cities.name}}</a></h1>
+            </li>
+        </ul>
+    </div>
+    <router-outlet></router-outlet>
+    </div>
+  
