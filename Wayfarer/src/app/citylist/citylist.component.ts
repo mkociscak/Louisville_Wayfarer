@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-
-
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { CitiesComponent } from '../cities/cities.component';
+import { ActivatedRoute } from '@angular/router';
+import { CITY } from '../cityobjects';
 
 
 @Component({
@@ -9,10 +10,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./citylist.component.css']
 })
 export class CitylistComponent implements OnInit {
+//  @Input("cityNumber") cityNumber: number;
+    
+  city: any = CITY
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private element: ElementRef) { }
 
   ngOnInit(): void {
+    this.element.nativeElement.getAttribute("cityNumber")
+    console.log(this.city)
+  
   }
-
 }

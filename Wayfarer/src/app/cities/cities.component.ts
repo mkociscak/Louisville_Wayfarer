@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CITY } from './cityobjects';
+import { CITY } from '../cityobjects';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,7 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CitiesComponent implements OnInit {
 
-  city: any;
+    
+
+
+city: any = CITY;
 
   constructor(private route: ActivatedRoute) { }
 

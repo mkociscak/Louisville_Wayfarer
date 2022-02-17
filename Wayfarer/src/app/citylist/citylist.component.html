@@ -1,3 +1,16 @@
-<h2>CitiesList is working</h2>
-<app-cities></app-cities>
+<div class="cities-page">
+<div>
+    <ul *ngFor="let cities of city"> 
+        <li>
+            <a>{{cities.name}}</a>
+        </li>
+
+    </ul>
+</div>
 <router-outlet></router-outlet>
+</div>
+<app-cities></app-cities>
+
+
+
+
