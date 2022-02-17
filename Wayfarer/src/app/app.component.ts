@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { CITY } from './cities/cityobjects'; 
+import { CITY } from './cityobjects';
+
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,7 @@ import { CITY } from './cities/cityobjects';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  cities = CITY;
+  title = 'Wayfarer';
+  city = CITY;
+  
 }
