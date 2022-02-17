@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { CitiesComponent } from '../cities/cities.component';
 import { ActivatedRoute } from '@angular/router';
 import { CITY } from '../cityobjects';
@@ -10,22 +10,15 @@ import { CITY } from '../cityobjects';
   styleUrls: ['./citylist.component.css']
 })
 export class CitylistComponent implements OnInit {
-
+//  @Input("cityNumber") cityNumber: number;
     
-  city: any;
+  city: any = CITY
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private element: ElementRef) { }
 
   ngOnInit(): void {
-    this.route.paramMap
-    .subscribe(params => {
-      this.city = CITY.find(city => {
-        let paramId: string = params.get('id') || '';
-        return city.id === parseInt(paramId);
-        
-      })
-      console.log(this.city);
-      
-    })
+    this.element.nativeElement.getAttribute("cityNumber")
+    console.log(this.city)
+  
   }
 }

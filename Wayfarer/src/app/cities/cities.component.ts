@@ -9,28 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CitiesComponent implements OnInit {
 
-    CITY = [
-
-    {
-        id: 1,
-        name: 'San Francisco'
-        
-    },
     
-    {
-        id: 2,
-        name: 'London'
-        
-    }, 
-    {
-        id: 3,
-        name: 'Gibraltar'
-    }
-      
-    ]
 
 
-  city: any = CITY;
+city: any = CITY;
 
   constructor(private route: ActivatedRoute) { }
 
