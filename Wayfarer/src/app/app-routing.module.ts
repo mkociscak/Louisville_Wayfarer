@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SlideshowComponent } from './slideshow/slideshow.component';
-import { CITY } from './cityobjects';
-import { CitiesComponent } from './cities/cities.component';
 import { CitylistComponent } from './citylist/citylist.component';
-import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
+import { CitiesComponent } from './cities/cities.component';
+import { PostsComponent } from './posts/posts.component';
+
 
 const routes: Routes = [
 
@@ -13,16 +12,24 @@ const routes: Routes = [
     path: 'home',
     component: SlideshowComponent
     },
-
-    {
-      path: 'cities',
-      component: CitylistComponent
-    }
-
-
-
+      {
+        path: 'cities',
+        component: CitylistComponent,
+        children: [
+          {
+            path: ':id',
+            component: CitiesComponent
+          },
+          {
+            path: ':id/posts/:postId',
+            component: PostsComponent
+          }
+        ]
+      },
+     
+    ];
+      
   
-  ]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
