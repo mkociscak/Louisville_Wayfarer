@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { CITY } from '../cityobjects';
 import { ActivatedRoute } from '@angular/router';
@@ -30,4 +31,4 @@ posts: any;
     
   
     
-  }
+}

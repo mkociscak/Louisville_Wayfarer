@@ -15,9 +15,11 @@ import { PostsComponent } from './posts/posts.component';
     CitiesComponent,
     CitylistComponent,
     NavComponent,
+
     SlideshowComponent,
     PostsComponent
     
+
   ],
   imports: [
     BrowserModule,
