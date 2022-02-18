@@ -1,0 +1,21 @@
+<div class="cities-page">
+    <div class="city">
+        <div>
+            <div>
+             <h1>{{city.name}}</h1>  
+             </div>
+        </div>
+    <div></div>
+    </div>
+    <div class="posts">
+        <div *ngFor= "let posts of city.posts" >
+   
+        <div>
+           <h2><a routerLink = "/cities/{{city.id}}/posts/{{posts.id}}" >{{posts.title}}</a></h2> 
+            <p>{{posts.author}}</p>
+          </div>
+    </div>
+    
+</div>
+  
+  

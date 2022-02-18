@@ -1,1 +1,6 @@
-<p>posts works!</p>
+<div *ngFor= "let posts of city.posts">
+<h1>Post for {{city.name}}</h1>
+<h2>Post Title: {{posts.title}}</h2>
+<h3><em>Written By: {{posts.author}}</em></h3>
+<p>{{posts.body}}</p>
+</div>
