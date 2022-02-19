@@ -14,11 +14,10 @@ export class CitylistComponent implements OnInit {
     
   city: any = CITY
 
-  constructor(private route: ActivatedRoute, private element: ElementRef) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.element.nativeElement.getAttribute("cityNumber")
-    console.log(this.city)
+    
   
   }
 }

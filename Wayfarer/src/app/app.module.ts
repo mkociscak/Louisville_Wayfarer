@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CitiesComponent } from './cities/cities.component';
 import { CitylistComponent } from './citylist/citylist.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { PostsComponent } from './posts/posts.component';
 
 
 @NgModule({
@@ -14,7 +15,11 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     CitiesComponent,
     CitylistComponent,
     NavComponent,
-    SlideshowComponent,    
+
+    SlideshowComponent,
+    PostsComponent
+    
+
   ],
   imports: [
     BrowserModule,

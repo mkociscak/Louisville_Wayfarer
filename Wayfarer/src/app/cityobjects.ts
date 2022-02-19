@@ -4,6 +4,7 @@ export const CITY = [
     id: 1,
     name: 'San Francisco',
     posts: [{
+
         author: 'Dave Bergman',
         postId: 1,
         title: 'Golden Gate Bridge',
@@ -22,12 +23,14 @@ export const CITY = [
     body: "Ghirardelli Square:  Along the San Fran waterfront lies the food destination of Ghirardelli Square.  Among the many restaurants that encompass the square there are other attractions, such as, retail stores, activities for all ages, the Ghirardelli Chocolate Factory, San Francisco Maritime National Historical Park, and Fisherman's Wharf.  All that being said, I came for the food!  As a huge chocolate lover, the tour of the factory made me feel like I was in candyland, literally.  The shear scale of production made me feel small and at the same time, better about myself knowing that I was not alone in my obsession for this decandant, delicious, delicacy, dessert.  After I had walked for what felt like miles, I realized I was hungry for more than sweets.  So I popped in to Barrio Tacos and Tequila for more than tacos.  The fresh salsa and margs were a great start to the meal.  However, the churros dipped in warm Ghirardelli's dark chocolate sauce spiced with a little cayanne was the perfect end to a scrumptious meal, as well as, a shot of Don Julio 1942 for good measure!  I'll be back.  ***"},
 
 ]
+
 },
 
 {
     id: 2,
     name: 'London',
     posts: [{
+
         author: 'Mary Poppins',
         postId: 1,
         title: 'Buckingham Palace',
@@ -47,12 +50,14 @@ export const CITY = [
 
         
 
+
     
             ]
 }, 
 {
     id: 3,
     name: 'Gibraltar',
+
     posts: [{
         author: 'Tariq ibn Ziyad',
         postId: 1,
