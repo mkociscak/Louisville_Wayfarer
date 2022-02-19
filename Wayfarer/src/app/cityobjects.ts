@@ -52,7 +52,7 @@ export const CITY = [
 
 
     
-]
+            ]
 }, 
 {
     id: 3,
@@ -62,7 +62,18 @@ export const CITY = [
         author: 'Tariq ibn Ziyad',
         postId: 1,
         title: 'Dolphin Safari Tours',
-        body:  'While visiting the town of Gibraltar with the family we spent a day on the water with Dolphin Safari Tours.  The boat was well maintained and the crew friendly and professional.  '}]
-
-}
+        body:  'While visiting the town of Gibraltar with the family we spent a day on the water with Dolphin Safari Tours.  The boat was well maintained and the crew friendly and professional.  We were pleased by the occupancy limits set by the company, which left plenty of room to spread out and get a good view.  The marine life was amazing!  Plenty of dolphin activity and they were so playful.  At one point we thought they might actually jump in the boat.  10 out of 10 would recommend taking this tour.  ****'},
+       
+        {
+            author: 'Ernest Shackleton',
+            postId: 2,
+            title: 'Hiking Gibraltar',
+            body:  'Once a stronghold to the treasures of the Mediterranean Sea, the rock now offers plenty of hiking and majestic views of the area.  There is the Barbary macaques, a species native to Morocco and the only monkeys living wild anywhere in Europe. Legend has it that if the apes ever leave Gibraltar, so too will the British, to see.  As well as, the Upper Rock Nature Preserve, which holds many attractions.  St. Michaels Cave being my favorite! The 100 ton gun at Magdala Battery was a stark reminder of the military importance that this long fought over rock possesses.  *****'},
+        
+            {
+                author: 'Pau Gasol',
+                postId: 3,
+                title: 'Spanish Coastal Living',
+                body:  'After 20 years in the NBA and the demands that come along with that, it was time to settle down and enjoy retirement.  What better place than a coastal town in my home country, Spain.  The quiet laid back setting is perfect for relaxing.  The food is amazing with the bounties of the Meditteranean and the  influence of Spanish and Northern African cooking.  The small town feel allows both privacy and familiarity which is difficult to find being a pro athelete and over 7 ft tall.  So if you find yourself ready to retire, look no further than the Spanish coast.  You will be happy you did! *****'}
+    ]}
 ];

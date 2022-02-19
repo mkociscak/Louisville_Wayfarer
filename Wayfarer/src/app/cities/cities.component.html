@@ -2,13 +2,32 @@
     <div class="city">
         <div>
             <div>
+<<<<<<< HEAD
+             <h1>{{city.name}}</h1>
+=======
              <h1>{{city.name}}</h1>  
+>>>>>>> dd19f5c4c24f6b4662bae2ad4405fba8cc1a2b32
              </div>
         </div>
     <div></div>
     </div>
     <div class="posts">
         <div *ngFor= "let posts of city.posts" >
+<<<<<<< HEAD
+        <div>
+           <h2><a routerLink = "/cities/{{city.id}}/posts/{{posts.id}}" >{{posts.title}}</a></h2>
+            <p>{{posts.author}}</p>
+          </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
+
+
+
+
+
+
+=======
    
         <div>
            <h2><a routerLink = "/cities/{{city.id}}/posts/{{posts.id}}" >{{posts.title}}</a></h2> 
@@ -19,3 +38,4 @@
 </div>
   
   
+>>>>>>> dd19f5c4c24f6b4662bae2ad4405fba8cc1a2b32
