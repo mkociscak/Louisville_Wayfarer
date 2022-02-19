@@ -12,16 +12,10 @@ export class CitiesComponent implements OnInit {
 
     
 
-<<<<<<< HEAD
-cities: any = CITY;
-posts: any;
-city: any;
-=======
 
 cities: any = CITY;
 city: any;
 posts: any;
->>>>>>> dd19f5c4c24f6b4662bae2ad4405fba8cc1a2b32
 
   constructor(private route: ActivatedRoute) { }
 

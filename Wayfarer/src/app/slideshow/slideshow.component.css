@@ -20,12 +20,19 @@ a {
   }
   
   .next {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #f1f1f1;
+    color: black;
   }
   
   .round {
     border-radius: 50%;
+  }
+
+  .city {
+    padding-right: 30px;
+    text-align: right;
+    text-shadow: lightsteelblue; 
+    text-transform: uppercase;
   }
 
  
