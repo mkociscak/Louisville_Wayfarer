@@ -1,16 +1,14 @@
+<div class="topnav">
+    <a class="active"></a>
+    <input type="text" placeholder="Search..">
+  </div>
 <div class="cities-page">
-<div>
-    <ul *ngFor="let cities of city"> 
-        <li>
-            <a>{{cities.name}}</a>
-        </li>
-
-    </ul>
-</div>
-<router-outlet></router-outlet>
-</div>
-<app-cities></app-cities>
-
-
-
-
+    <div>
+        <ul *ngFor="let cities of city">
+            <li>
+                <h1><a routerLink="{{cities.id}}">{{cities.name}}</a></h1>
+            </li>
+        </ul>
+    </div>
+    <router-outlet></router-outlet>
+    </div>

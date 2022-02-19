@@ -11,8 +11,9 @@ export class CitiesComponent implements OnInit {
 
     
 
-
-city: any = CITY;
+cities: any = CITY;
+posts: any;
+city: any;
 
   constructor(private route: ActivatedRoute) { }
 
