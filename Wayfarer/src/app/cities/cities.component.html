@@ -1,27 +1,39 @@
 
+<div class="cities-page">
+    <div class="city">
+        <div>
+            <div>
+             <h1>{{city.name}}</h1>
+             </div>
+        </div>
+    <div></div>
+    </div>
+    <div class="posts">
+        <div *ngFor= "let posts of city.posts" >
+        <div>
+           <h2><a routerLink = "/cities/{{city.id}}/posts/{{posts.id}}" >{{posts.title}}</a></h2>
+            <p>{{posts.author}}</p>
+        </div>
+        </div>
+    <router-outlet></router-outlet>
+    </div>
+</div>
 <body>
-    <div id="slides_control" class="slideshow">
-        <div class = "slideshow-inner">
-            <ul class="slideImages">
-                <li> <img src="https://static.dezeen.com/uploads/2018/06/skywalk-rock-gibraltar-arc-designs_dezeen_2364_hero.jpg"
-                    class="img1"></li>
-                <li><img src="https://wallpapercave.com/wp/cdxkzZK.jpg"
-                    class="img2"></li>
-                <li><img src="https://a.cdn-hotels.com/gdcs/production49/d151/7c0d7d6b-3494-4b0d-b75c-fc33be8ebccf.jpg"
-                    class="img3"></li>
-            </ul>
-        </div>
-        <div class = "buttons">
-            <a href="" class="previous">&#8249;</a>
-            <a href="#" class="next">&#8250;</a>
-        </div>
-    </div>
-    <div class ="container">
-        <div class = "item"><a>Ohhh HIIIII from Gibralter</a></div>
-        <div class = "item"><a>Ohhh HIIIII from San Francisco, California</a></div>
-        <div class = "item"><a>Ohhh HIIIII from London</a></div>
-    </div>
-    </body>
+<div class ="container">
+    <div class="item" id="SF">SanFrancisco</div>
+    <div class="item">Gibralter</div>
+    <div class="item">London</div>
+    <div class="item">Louisville</div>
+    <div class="item">Wellington</div>
+</div>
+<div class ="containerPosts">
+    <div class="item2"></div>
+    <div class="item2"></div>
+</div>
+<div class ="containerImage">
+    <div class="item3" >San Fran</div>
+</div>
+</body>
 
 
 <!--
